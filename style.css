@@ -144,7 +144,7 @@ h2 {
     text-align: center;
     font-size: 40px;
     font-weight: 500;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-bottom: 30px;
     padding-bottom: 20px;
     font-family: 'Ubuntu', sans-serif;
@@ -236,11 +236,29 @@ h2 {
 
 /* services section styling */
 .services {
+    color:#fff;
     background: #111;
 }
 .services .title::after {
     content:""
 }
+
+.services .serv-content .card {
+    /*width: calc(33% - 20px);*/
+    background:#222;
+    text-align: center;
+}
+
+.services .serv-content .card i {
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.services .serv-content .card .text {
+    font-size: 25px;
+    font-weight: 500;
+}
+
 
 /* responsive media query start */
 @media (max-width: 1300px) {
@@ -350,4 +368,5 @@ h2 {
     .home .home-content .text-4 {
         font-size: 27px;
     }
+}
 }
