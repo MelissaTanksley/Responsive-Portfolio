@@ -30,7 +30,7 @@
 
 /* menu button styling */
 .menu-btn {
-    color:#fff;
+    color: crimson;
     font-size: 23px;
     cursor: pointer;
     display: none;
@@ -58,18 +58,21 @@
 }
 
 .navbar .menu li a {
-    color: #fff;;
-    font-size: 18px;
+    color: crimson;;
+    font-size: 22px;
     font-weight: 500;
     margin-left: 25px;
     transition: color 0.3s ease;
 }
 
 .navbar .menu li a:hover {
-    color: crimson;
+    color: #fff;
+    border: 4px;
+    background-color: crimson;
 }
 
 /* home section styling */
+
 .home {
     display: flex;
     background: url("images/adrien-olichon-9zhsq3o1k60-unsplash (2).jpg") no-repeat center;
@@ -127,6 +130,16 @@
 }
 
 /* all similar content styling code */
+.about, .services .skills {
+    font-family: 'Poppins', sans-serif;
+}
+
+.about .about-content, /*.services .serv-content,*/ .skills .skills-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
 
 .about .title {
     position: relative;
@@ -172,19 +185,8 @@ h2 {
 }
 
 /* about section styling */
-.about, .services{
-    font-family: 'Poppins', sans-serif;
-}
-
 .about .title::after {
     content: ""
-}
-
-.about .about-content {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
 }
 
 .about .about-content .left {
@@ -234,6 +236,8 @@ h2 {
     background: none;
 }
 
+
+
 /* services section styling */
 .services {
     color:#fff;
@@ -249,7 +253,7 @@ h2 {
     text-align: center;
 }
 
-.services .serv-content .card i {
+/*.services .serv-content .card i {
     font-size: 50px;
     font-weight: 500;
 }
@@ -259,6 +263,45 @@ h2 {
     font-weight: 500;
 }
 
+.services .serv-content .card .box {
+    transition: all 0.3s ease;
+}*/
+
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+
+/* skills section styling */
+.skills .skills-content .column {
+    width: calc(50% - 30px);
+}
+
+.skills .skills-content .left .text {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.skills .skills-content .right .bars {
+    margin-bottom: 15px;
+}
+
+/* not working */
+.skills .skills-content .right .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills .skills-content .right span {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.skills .skills-content .right .line {
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+}
 
 /* responsive media query start */
 @media (max-width: 1300px) {
@@ -336,8 +379,11 @@ h2 {
     }
     .about .about-content .right {
         flex: 100%;
-
     }
+    /*.services .serv-content .card {
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }*/
 }
 
 @media (max-width: 690px) {
@@ -356,6 +402,9 @@ h2 {
     .home .home-content a {
         font-size: 20px;
     }
+    /*.services .serv-content .card {
+        width: 100%;
+    }*/
 }
 
 @media (max-width: 500px) {
