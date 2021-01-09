@@ -60,7 +60,7 @@
 .navbar .menu li a {
     color: crimson;;
     font-size: 22px;
-    font-weight: 500;
+    font-weight: 700;
     margin-left: 25px;
     transition: color 0.3s ease;
 }
@@ -130,7 +130,7 @@
 }
 
 /* all similar content styling code */
-.about, .services .skills {
+.about, .services .skills .projects {
     font-family: 'Poppins', sans-serif;
 }
 
@@ -249,7 +249,7 @@ h2 {
 
 .services .serv-content .card {
     /*width: calc(33% - 20px);*/
-    background:#222;
+    background:#111;
     text-align: center;
 }
 
@@ -281,6 +281,28 @@ h2 {
     font-family: 'Ubuntu', sans-serif;
 }
 
+.skills .skills-content .left p {
+    text-align: justify;
+}
+
+.skills .skills-content .left a {
+    display: inline-block;
+    background: crimson;
+    color:#fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+
+.skills .skills-content .left a:hover {
+    color: crimson;
+    background: none;
+}
+
 .skills .skills-content .right .bars {
     margin-bottom: 15px;
 }
@@ -288,6 +310,7 @@ h2 {
 /* not working */
 .skills .skills-content .right .info {
     display: flex;
+    margin-bottom: 5px;
     align-items: center;
     justify-content: space-between;
 }
@@ -301,6 +324,42 @@ h2 {
     height: 5px;
     width: 100%;
     background: lightgrey;
+    position: relative;
+}
+
+.skills .skills-content .right .line::before {
+    content:"";
+    position: absolute;
+    height: 100%; 
+    width: 80%;
+    left: 0; 
+    top: 0;
+    background: crimson;
+}
+
+.skills .skills-content .right .html::before {
+    width: 90%;
+}
+.skills .skills-content .right .css::before {
+    width: 80%;
+}
+.skills .skills-content .right .js::before {
+    width: 70%;
+}
+.skills .skills-content .right .python::before {
+    width: 70%;
+}
+.skills .skills-content .right .node::before {
+    width: 50%;
+}
+.skills .skills-content .right .mysql::before {
+    width: 70%;
+}
+.skills .skills-content .right .figma::before {
+    width: 70%;
+}
+.skills .skills-content .right .ux::before {
+    width: 90%;
 }
 
 /* responsive media query start */
