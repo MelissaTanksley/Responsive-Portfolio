@@ -289,8 +289,13 @@ h2 {
     font-family: 'Ubuntu', sans-serif;
 }
 
+.skills .skills-content .bars .info {
+    font-family: 'Ubuntu', sans-serif;
+}
+
 .skills .skills-content .left p {
     text-align: justify;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .skills .skills-content .left a {
@@ -392,11 +397,21 @@ h2 {
     color: white; 
 }
 
+.projects .carousel .card .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .projects .carousel .card p {
     margin-left: 300px;
     margin-right: 300px;
     font-family: 'Ubuntu', sans-serif;
 }
+
+
+
 
 /* responsive media query start */
 @media (max-width: 1300px) {
