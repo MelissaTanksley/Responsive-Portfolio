@@ -253,6 +253,14 @@ h2 {
     text-align: center;
 }
 
+.services .serv-content .class {
+    font-size: 22px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.services .serv-content p {
+    font-family: 'Ubuntu', sans-serif;
+}
+
 /*.services .serv-content .card i {
     font-size: 50px;
     font-weight: 500;
@@ -360,6 +368,32 @@ h2 {
 }
 .skills .skills-content .right .ux::before {
     width: 90%;
+}
+
+/* projects styling start */
+
+.projects .carousel .card img {
+    height: 225 px;
+    width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.projects .carousel .card .text {
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.projects {
+    background: #222;
+    color: white; 
+}
+
+.projects .carousel .card p {
+    margin-left: 300px;
+    margin-right: 300px;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 /* responsive media query start */
