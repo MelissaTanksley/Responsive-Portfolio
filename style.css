@@ -359,6 +359,9 @@ h2 {
 .skills .skills-content .right .js::before {
     width: 70%;
 }
+.skills .skills-content .right .jsx::before {
+    width: 70%;
+}
 .skills .skills-content .right .python::before {
     width: 70%;
 }
@@ -366,7 +369,7 @@ h2 {
     width: 50%;
 }
 .skills .skills-content .right .mysql::before {
-    width: 70%;
+    width: 50%;
 }
 .skills .skills-content .right .figma::before {
     width: 70%;
@@ -394,7 +397,13 @@ h2 {
     background: #222;
     border-radius: 6px;
     padding: 25px 35px;
+    text-align: center; 
     color: white; 
+    transition: all 0.3s ease;
+}
+
+.projects .carousel .card:hover {
+    background: crimson;
 }
 
 .projects .carousel .card .box {
@@ -404,6 +413,11 @@ h2 {
     justify-content: center;
 }
 
+.projects .carousel .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0; 
+}
 .projects .carousel .card p {
     margin-left: 300px;
     margin-right: 300px;
