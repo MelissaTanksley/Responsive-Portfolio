@@ -134,7 +134,7 @@
 }
 
 /* all similar content styling code */
-.about, .services, .skills, .projects, .contact {
+.about, .services, .skills, .projects, .contact, footer {
     font-family: 'Poppins', sans-serif;
 }
 
@@ -441,7 +441,13 @@ h2 {
     border: 2px solid crimson!important;
 }
 
-
+/* footer section styling */
+footer {
+    background: #111;
+    padding: 20px 23px;
+    color: crimson;
+    text-align: center;
+}
 
 /* responsive media query start */
 @media (max-width: 1300px) {
@@ -565,11 +571,16 @@ h2 {
     margin: 10px 0;
 }
 
-.contact .contact-content .row {
+.contact .contact-content .row i{
     display: flex;
     height: 65px;
     align-items: center;
 }
+
+.contact .right form .fields {
+    display: flex;
+}
+
 
 @media (max-width: 500px) {
     .home .home-content .text-2 {

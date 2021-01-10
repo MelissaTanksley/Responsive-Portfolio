@@ -18,12 +18,12 @@
         <div class="max-width">
             <div class="logo"><a href="#">Portfo<span>lio.</span></a></div>
             <ul class="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="menu-btn">
                 <i class="fas fa-bars"></i>
@@ -55,7 +55,7 @@
                 </div>
                 <div class="column right">
                     <div class="text">I'm Melissa and I'm a <span>Web Developer, <br>UX Designer</span></div>
-                    <p>Enthusiastic and a passion to learn new things! I am an ER nurse turned UX Designer and Web Developer. I discovered Lambda School's UX Design program while stuck in bed, nursing a broken leg. I loved that UX Design encompassed some of the same aspects of nursing: empathy, psychology, and research. But, it wasn't enough for me. I wanted to learn to code so I could be a true unicorn and a have a complete understanding of the projects I work on!</p>
+                    <p>Enthusiastic and a passion to learn new things while always up for a challenge! I am an ER nurse turned UX Designer and Web Developer. I discovered Lambda School's UX Design program while stuck in bed, nursing a broken leg. I loved that UX Design encompassed some of the same aspects of nursing: empathy, psychology, and research. But, it wasn't enough for me. I wanted to learn to code so I could be a true unicorn and a have a complete understanding of the projects I work on!</p>
                     <a href="#">Download CV</a>
                 </div>
             </div>
@@ -126,7 +126,7 @@
             <div class="skills-content">
                 <div class="column left">
                     <div class="text">My experience</div>
-                    <p>I was a UX Design student at Lambda School for seven months before I transferred to the Full Stack Web Development program, which I am near completing. When in UX Design, I gained experience in competitive research, design, user testing, personas, user flow charts, and much more. I also built a project from scratch up to the web development stage. <br> In Web Development, I was part of several website teams where I built landing/about pages, signin/signup forms, a database, and backend using Node. Currently, I am working on an outside project with a team for a potential start-up where I am a UX Designer and Web Developer. I am still a full time student with Lambda School in Labs where we are working with a team on a live project.  </p>
+                    <p>I was a UX Design student at Lambda School for seven months before I transferred to the Full Stack Web Development program, which I am near completing. When in UX Design, I gained experience in competitive research, design, user testing, personas, user flow charts, and much more. I also built a project from scratch up to the web development stage. <br> In Web Development, I was part of several website teams where I built landing/about pages, signin/signup forms, a database, and backend using Node. Currently, I am working on an outside project with a team for a potential start-up where I am a UX Designer and Web Developer.  </p>
                     <a href="https://github.com/MelissaTanksley?tab=repositories">Github</a>
                 </div>
                 <div class="column right">
@@ -260,17 +260,22 @@
                     <div class="column right">
                         <div class="text">Message me</div>
                         <form action="#">
-                            <div class="field">
-                                <input type="text" placeholder="Name">
-                            </div>
-                            <div class="field">
-                                <input type="email" placeholder="Email">
-                            </div>
-                            <div class="field">
-                                <input type="text" placeholder="Subject">
-                            </div>
-                            <div class="field textarea">
-                                <textarea cols="30" rows="10 placeholder="Comments"></textarea>
+                            <div class="fields">
+                                <div class="field name">
+                                    <input type="text" placeholder="Name" required>
+                                </div>
+                                <div class="field email">
+                                    <input type="email" placeholder="Email" required>
+                                </div>
+                                <div class="field textarea">
+                                    <input type="text" placeholder="Subject" required>
+                                </div>
+                                <div class="field textarea">
+                                    <textarea cols="30" rows="10 placeholder="Comments" required></textarea>
+                                </div>
+                                <div class="button">
+                                    <button type="submit">Send message</button>
+                                </div>
                             </div>
                         </form>
                             
@@ -279,6 +284,11 @@
             </div>
         </div>
     </section>
+
+    <!-- footer section start -->
+    <footer>
+        <span>Created By <a href="#">Melissa Tanksley</a> | <span class="far fa-copyright"></span>2021 All rights reserved.</span>
+    </footer>
 
     <script src="script.js"></script>
 </body>
