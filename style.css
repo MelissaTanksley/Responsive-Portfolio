@@ -46,6 +46,7 @@
     color: crimson;
     font-size: 35px;
     font-weight: 600px;
+    -webkit-text-stroke: 1px black;
 }
 
 .navbar .logo a span {
@@ -63,6 +64,8 @@
     font-weight: 700;
     margin-left: 25px;
     transition: color 0.3s ease;
+    -webkit-text-stroke: 1px black;
+
 }
 
 .navbar .menu li a:hover {
@@ -94,6 +97,7 @@
     font-size: 75px;
     font-weight: 600;
     margin-left: -3px;
+    color: crimson;
 }
 
 .home .home-content .text-3 {
@@ -130,11 +134,11 @@
 }
 
 /* all similar content styling code */
-.about, .services .skills .projects {
+.about, .services, .skills, .projects, .contact {
     font-family: 'Poppins', sans-serif;
 }
 
-.about .about-content, /*.services .serv-content,*/ .skills .skills-content {
+.about .about-content, /*.services .serv-content,*/ .skills .skills-content, .projects, .contact .contact-content {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -424,6 +428,18 @@ h2 {
     font-family: 'Ubuntu', sans-serif;
 }
 
+.owl-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.owl-dot {
+    height: 13px;
+    width: 13px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid crimson!important;
+}
 
 
 
@@ -529,6 +545,30 @@ h2 {
     /*.services .serv-content .card {
         width: 100%;
     }*/
+}
+
+/* contact section styling */
+.contact .contact-content .column {
+    width: calc(50% - 30);
+}
+
+.contact .contact-content .text {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.contact .contact-content .left p {
+    text-align: justify;
+}
+
+.contact .contact-content .left .icons {
+    margin: 10px 0;
+}
+
+.contact .contact-content .row {
+    display: flex;
+    height: 65px;
+    align-items: center;
 }
 
 @media (max-width: 500px) {
