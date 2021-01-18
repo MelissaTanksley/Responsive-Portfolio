@@ -246,6 +246,7 @@ h2 {
 .services {
     color:#fff;
     background: #111;
+    
 }
 .services .title::after {
     content:""
@@ -255,6 +256,8 @@ h2 {
     /*width: calc(33% - 20px);*/
     background:#111;
     text-align: center;
+    margin-left: 150px;
+    margin-right: 150px;
 }
 
 .services .serv-content .class {
@@ -384,6 +387,8 @@ h2 {
 
 /* projects styling start */
 
+
+
 .projects .carousel .card img {
     height: 225 px;
     width: 500px;
@@ -450,6 +455,13 @@ footer {
 }
 
 /* responsive media query start */
+
+
+
+
+
+
+
 @media (max-width: 1300px) {
     .home .max-width {
         margin-left: 0px;
@@ -526,6 +538,13 @@ footer {
     .about .about-content .right {
         flex: 100%;
     }
+
+    .projects {
+        display: flex;
+        margin-bottom: 5px;
+        align-items: center;
+        justify-content: space-between;
+    }
     /*.services .serv-content .card {
         width: calc(50% - 10px);
         margin-bottom: 20px;
@@ -551,7 +570,14 @@ footer {
     /*.services .serv-content .card {
         width: 100%;
     }*/
+    .projects {
+        display: flex;
+        margin-bottom: 5px;
+        align-items: center;
+        justify-content: space-between;
+    }
 }
+
 
 /* contact section styling */
 .contact .contact-content .column {
