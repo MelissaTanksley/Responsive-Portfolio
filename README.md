@@ -6,7 +6,7 @@ Hi there 👋 I'm Melissa! I am a Full Stack Web Developer | UX Designer. I am p
 
 🌱 I’m currently learning ...
 * freshening up my skills in Python using The Complete Python Bootcamp Udemy course
-* taking UX Design classes through https://www.interaction-design.org/
+* UX Design courses through https://www.interaction-design.org/
 
 👯 I’m looking to collaborate on ...
 * Developing video games of all sorts
